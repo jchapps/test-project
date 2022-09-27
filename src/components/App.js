@@ -1,9 +1,12 @@
 
-import '../styles/App.css';
+import '../styles/App.scss';
 
 function App() {
   return (
-    <div></div>
+   <div className="gifGrid">
+    hello
+   </div>
+
 
 )};
 
