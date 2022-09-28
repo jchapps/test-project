@@ -4,9 +4,9 @@ import Gif from "./Gif"
 const GifList = () => {
   return (
     <div className='gifGrid'>
-      <Gif className='gif' gifId="3o85xsGXVuYh8lM3EQ"/>
-      <Gif className='gif' gifId="riwAaDlaA3zQQ"/>
-      <Gif className='gif' gifId="aFTt8wvDtqKCQ"/>
+      <Gif gifId="3o85xsGXVuYh8lM3EQ"/>
+      <Gif gifId="riwAaDlaA3zQQ"/>
+      <Gif gifId="aFTt8wvDtqKCQ"/>
       <Gif gifId="bGgsc5mWoryfgKBx1u"/>
       <Gif gifId="Z8k6qo0AVIsPdROQNd"/>
       <Gif gifId="1Bh2nNww4IFE9rQZ3S"/>
