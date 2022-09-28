@@ -1,5 +1,13 @@
-.gifGrid {
+.gifGrid  {
   display: grid;
-  gap: 1px;
   grid-template-columns: repeat(3, 1fr);
+  padding-left: 110px ;
+}
+
+.gifGrid img {
+  object-fit: cover;
+  height: 190px;
+  width: 310px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

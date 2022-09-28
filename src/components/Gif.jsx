@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Gif = () => {
-  return (
+const Gif = (props) => {
+    const { gifId} = props;
+    const url = `https://media.giphy.com/media/${gifId}/giphy.gif`;
+
+    return (
     <div>
-      <img src="https://media.giphy.com/media/PnpkimJ5mrZRe/giphy.gif" alt="" />
+      <img src={url} alt="gif" />
     </div>
   );
 };
