@@ -36,7 +36,7 @@ function App() {
       {
         q: keyword,
         rating: "g",
-        limit: 27
+        limit: 43
       },
       (err, res) => {
         const gifIdsArr = res.data.map((gif) => gif.id)
