@@ -14,7 +14,7 @@ const SearchBar = (props) => {
         className="text"
         label="Search for a GIF"
         variant="outlined"
-        placeholder="GIF "
+        placeholder="GIF"
         size="medium"
         onChange= { handleChange }
       />

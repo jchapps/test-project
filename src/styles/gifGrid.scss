@@ -2,13 +2,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-left: 110px ;
-  background-image: url(https://img.freepik.com/premium-photo/simple-abstract-geometric-pattern-background-color-background-website-design-decoration_86390-7411.jpg?w=1800);
+  gap: 10px;
 }
 
 .gifGrid img {
   object-fit: cover;
   height: 190px;
   width: 310px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+  box-shadow: 2px 2px 2px 2px black;
+  }
