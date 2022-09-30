@@ -1,9 +1,20 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App from './components/App';
 import React from "react";
+import SearchBar from './components/Searchbar';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('Gifs', () => {
+  test('Renders gifs', async () => {
+    render(<App />)
+    const items = await screen.findAllByRole('img')
+    expect(items).toHaveLength(9)
+  })
+})
+
+describe('Searchbar', () => {
+  test('Searchbar has input field', () => {
+    render(<SearchBar/>);
+    const searchbar = screen.getByRole('textbox');
+    expect(searchbar).toHaveAttribute('placeholder');
+  });
 });
