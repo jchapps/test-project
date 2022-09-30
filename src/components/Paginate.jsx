@@ -9,7 +9,7 @@ const Paginate = props => {
 
   return (
     <nav>
-      <ul className="pagination pagination-sm justify-content-end border-0">
+      <ul className="pagination">
         { pageNumbers.map((number, index) => {
           let classes = "page-item ";
           if (number === props.currentPage) {
@@ -17,9 +17,9 @@ const Paginate = props => {
           }
 
           return (
-            <li className={classes} key={index}>
+            <li className= { classes } key= {index}>
               <a
-                onClick={() => props.pageSelected(number)}
+                onClick={() => props.pageSelected(number) }
                 href="!#"
                 className="page-link"
               >
