@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import '../styles/App.scss';
 import '../styles/gifGrid.scss';
 import '../styles/searchbar.scss';
+import '../styles/pagination.scss';
 import SearchBar from '../components/Searchbar'
 import GifList from './GifList';
 import Paginate from './Paginate'
@@ -18,7 +19,6 @@ function App() {
   const indexOfLastItem = currentPage * itemsPerPage
   const indexOfFirstItem = indexOfLastItem - itemsPerPage
 
-
   const [gifIdList, setGifIds] = useState (['3o85xsGXVuYh8lM3EQ',
   'riwAaDlaA3zQQ',
   'aFTt8wvDtqKCQ',
@@ -29,12 +29,14 @@ function App() {
   '3o7abKhOpu0NwenH3O',
   'SRn9TUPpFuQAU'])
 
+  const currentItems = gifIdList.slice(indexOfFirstItem, indexOfLastItem)
+
   const fetchGiphy = (keyword) => {
     giphy.search(
       {
         q: keyword,
         rating: "g",
-        limit: 28
+        limit: 27
       },
       (err, res) => {
         const gifIdsArr = res.data.map((gif) => gif.id)
@@ -43,9 +45,10 @@ function App() {
     );
   };
 
-  const pageSelected = pageNumber => {
+  const pageSelected = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
+
 
   return (
     <div>
@@ -53,11 +56,12 @@ function App() {
        <SearchBar fetchGiphy= { fetchGiphy } />
       </div>
       <Paginate
+
         pageSelected= { pageSelected }
         currentPage= { currentPage }
         itemsPerPage= { itemsPerPage }
         totalItems= { gifIdList.length }/>
-      <GifList gifIds= { gifIdList }/>
+      <GifList gifIds= { currentItems }/>
     </div>
 )}
 
