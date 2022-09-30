@@ -1,4 +1,3 @@
-import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 
@@ -18,9 +17,7 @@ const SearchBar = (props) => {
         size="medium"
         onChange={handleChange}
       />
-      <IconButton type="submit" aria-label="search" className="icon">
-        <SearchIcon />
-      </IconButton>
+        <SearchIcon color="primary" fontSize="large"/>
     </form>
 )};
 
