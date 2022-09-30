@@ -1,5 +1,6 @@
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
+import React from 'react'
 
 const SearchBar = (props) => {
     const handleChange = (event) => {

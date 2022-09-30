@@ -7,7 +7,7 @@ import React, { useState } from "react";
 
 const giphy = require("giphy-api")({
   apiKey: "8dq7ojpO6TcW65DTXXd5aHG5iqeKib0D",
-  https: true,
+  https: true
 });
 
 function App() {
@@ -33,6 +33,6 @@ function App() {
       </div>
       <GifList gifIds={gifIdList}/>
     </div>
-)};
+)}
 
 export default App;
