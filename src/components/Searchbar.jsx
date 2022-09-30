@@ -16,7 +16,7 @@ const SearchBar = (props) => {
         variant="outlined"
         placeholder="GIF "
         size="medium"
-        onChange={handleChange}
+        onChange= { handleChange }
       />
         <SearchIcon color="primary" fontSize="large"/>
     </form>
