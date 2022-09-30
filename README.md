@@ -1,3 +1,12 @@
+# React.js - ReactMui/Boostrap
+
+## Custom Linting 
+`npm run lint` 
+
+## Custom Tests 
+`npm test`
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
