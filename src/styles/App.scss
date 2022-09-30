@@ -33,6 +33,14 @@ body {
   color: #61dafb;
 }
 
+.page-item.active {
+  background: #ffbcc3;
+}
+
+.page-item.active a {
+  font-weight: bold;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

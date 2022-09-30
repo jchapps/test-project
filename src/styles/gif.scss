@@ -1,0 +1,7 @@
+.gif img {
+  display: flex;
+  object-fit: cover;
+  height: 180px;
+  width: 300px;
+  flex-shrink: 0;
+}
