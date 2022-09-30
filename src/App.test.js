@@ -4,7 +4,7 @@ import React from "react";
 import SearchBar from './components/Searchbar';
 
 describe('Gifs', () => {
-  test('Renders gifs', async () => {
+  test('Renders 9 gifs', async () => {
     render(<App />)
     const items = await screen.findAllByRole('img')
     expect(items).toHaveLength(9)
@@ -12,7 +12,7 @@ describe('Gifs', () => {
 })
 
 describe('Searchbar', () => {
-  test('Searchbar has input field', () => {
+  test('Searchbar has an input field', () => {
     render(<SearchBar/>);
     const searchbar = screen.getByRole('textbox');
     expect(searchbar).toHaveAttribute('placeholder');
