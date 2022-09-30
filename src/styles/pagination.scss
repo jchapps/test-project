@@ -1,17 +1,13 @@
 .page-item {
-  align-items: center;
-  align-content: center;
+  color: blue
 
 }
 
 .page-item.active {
   background: #ffbcc3;
-  align-items: center;
-  align-content: center;
+
 }
 
 .page-item.active a {
   font-weight: bold;
-  align-items: center;
-  align-content: center;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Pagination from '@mui/material/Pagination';
 
 const Paginate = props => {
   const pageNumbers = [];
@@ -9,9 +10,9 @@ const Paginate = props => {
 
   return (
     <nav>
-      <ul className="pagination">
+      <ul className="pagination pagination-sm justify-content-center border-0">
         { pageNumbers.map((number, index) => {
-          let classes = "page-item ";
+          let classes = "page-item";
           if (number === props.currentPage) {
             classes += "active";
           }
