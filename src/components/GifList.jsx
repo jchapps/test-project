@@ -7,7 +7,7 @@ const GifList = (props) => {
     <div className='gifGrid'>
       { gifIds.map(
         (gifId) => <Gif gifId= { gifId } key= { gifId } />
-      )}
+      ) }
     </div>
   );
 };

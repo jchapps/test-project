@@ -27,7 +27,8 @@ module.exports = {
   ],
   root: true,
   rules: {
-      "comma-dangle": [
+    "react/prop-types": 0,
+    "comma-dangle": [
         "warn",
         "never"
     ],
@@ -60,7 +61,7 @@ module.exports = {
           },
           when: "always"
       }
-    ],
+    ]
 
   },
   settings: {

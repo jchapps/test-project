@@ -1,9 +1,10 @@
+import React, { useState } from "react";
 import '../styles/App.scss';
 import '../styles/gifGrid.scss';
 import '../styles/searchbar.scss';
 import SearchBar from '../components/Searchbar'
 import GifList from './GifList';
-import React, { useState } from "react";
+
 
 const giphy = require("giphy-api")({
   apiKey: "8dq7ojpO6TcW65DTXXd5aHG5iqeKib0D",
