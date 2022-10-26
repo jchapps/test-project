@@ -1,7 +1,6 @@
 import React from "react";
-import Pagination from '@mui/material/Pagination';
 
-const Paginate = props => {
+const Paginate = (props) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(props.totalItems / props.itemsPerPage); i++) {
@@ -11,20 +10,20 @@ const Paginate = props => {
   return (
     <nav>
       <ul className="pagination pagination-sm justify-content-center border-0">
-        { pageNumbers.map((number, index) => {
+        {pageNumbers.map((number, index) => {
           let classes = "page-item";
           if (number === props.currentPage) {
             classes += "active";
           }
 
           return (
-            <li className= { classes } key= {index}>
+            <li className={ classes } key={ index }>
               <a
-                onClick={() => props.pageSelected(number) }
+                onClick={ () => props.pageSelected(number) }
                 href="!#"
                 className="page-link"
               >
-                {number}
+                { number }
               </a>
             </li>
           );

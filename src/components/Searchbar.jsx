@@ -1,13 +1,13 @@
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
-import React from 'react'
+import React from "react";
 
 const SearchBar = (props) => {
-    const handleChange = (event) => {
-      const { fetchGiphy } = props;
-      fetchGiphy(event.currentTarget.value);
-    };
-    return (
+  const handleChange = (event) => {
+    const { fetchGiphy } = props;
+    fetchGiphy(event.currentTarget.value);
+  };
+  return (
     <form>
       <TextField
         id="search-bar"
@@ -16,10 +16,11 @@ const SearchBar = (props) => {
         variant="outlined"
         placeholder="GIF"
         size="medium"
-        onChange= { handleChange }
+        onChange={ handleChange }
       />
-        <SearchIcon color="primary" fontSize="large"/>
+      <SearchIcon color="primary" fontSize="large" />
     </form>
-)};
+  );
+};
 
 export default SearchBar;
